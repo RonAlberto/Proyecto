@@ -15,17 +15,17 @@
             <Image url="@../../../../../../Desktop/scenebuilder/Grid-Hexagonal-White-HD-Wallpaper.jpg" />
          </image>
       </ImageView>
-      <Button fx:id="alumno" layoutX="236.0" layoutY="157.0" mnemonicParsing="false" onAction="#pressedButton" prefHeight="138.0" prefWidth="201.0" text="Alumno" />
+      <Button fx:id="alumno" layoutX="236.0" layoutY="157.0" mnemonicParsing="false" onAction="#pressedButton1" prefHeight="138.0" prefWidth="201.0" text="Alumno" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="71.0" stroke="BLACK" strokeType="INSIDE" width="1302.0" />
       <Text fill="#fffdfd" layoutX="504.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="APLICACIÓN GESTIÓN FCT">
          <font>
             <Font name="Malgun Gothic" size="24.0" />
          </font>
       </Text>
-      <Button fx:id="empresa" layoutX="550.0" layoutY="157.0" mnemonicParsing="false" onAction="#pressedButton" prefHeight="138.0" prefWidth="201.0" text="Empresa" />
-      <Button fx:id="ciclo" layoutX="854.0" layoutY="157.0" mnemonicParsing="false" onAction="#pressedButton" prefHeight="138.0" prefWidth="201.0" text="Ciclo" />
-      <Button fx:id="tutorcentro" layoutX="236.0" layoutY="431.0" mnemonicParsing="false" onAction="#pressedButton" prefHeight="138.0" prefWidth="201.0" text="Tutor centro" />
-      <Button fx:id="generaranexos" layoutX="854.0" layoutY="431.0" mnemonicParsing="false" onAction="#pressedButton" prefHeight="138.0" prefWidth="201.0" text="Generar Anexos" />
-      <Button fx:id="vincular" layoutX="550.0" layoutY="431.0" mnemonicParsing="false" onAction="#pressedButton" prefHeight="138.0" prefWidth="201.0" text="Vincular" />
+      <Button fx:id="empresa" layoutX="550.0" layoutY="157.0" mnemonicParsing="false" onAction="#pressedButton2" prefHeight="138.0" prefWidth="201.0" text="Empresa" />
+      <Button fx:id="ciclo" layoutX="854.0" layoutY="157.0" mnemonicParsing="false" onAction="#pressedButton3" prefHeight="138.0" prefWidth="201.0" text="Ciclo" />
+      <Button fx:id="tutorcentro" layoutX="236.0" layoutY="423.0" mnemonicParsing="false" onAction="#pressedButton4" prefHeight="138.0" prefWidth="201.0" text="Tutor centro" />
+      <Button fx:id="generaranexos" layoutX="854.0" layoutY="431.0" mnemonicParsing="false" prefHeight="138.0" prefWidth="201.0" text="Generar Anexos" />
+      <Button fx:id="vincular" layoutX="550.0" layoutY="431.0" mnemonicParsing="false" onAction="#pressedButton5" prefHeight="138.0" prefWidth="201.0" text="Vincular" />
    </children>
 </AnchorPane>

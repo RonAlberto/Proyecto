@@ -19,23 +19,23 @@
          </image>
       </ImageView>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="71.0" stroke="BLACK" strokeType="INSIDE" width="1302.0" />
-      <Text fill="#fffdfd" layoutX="532.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DATOS DEL ALUMNO">
+      <Text fill="#fffdfd" layoutX="532.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DATOS DEL CICLO">
          <font>
             <Font name="Malgun Gothic" size="24.0" />
          </font>
       </Text>
-      <TextField layoutX="222.0" layoutY="137.0" />
-      <Text layoutX="66.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NOMBRE" />
-      <Text layoutX="68.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="APELLIDOS" />
-      <TextField layoutX="222.0" layoutY="210.0" />
-      <Text layoutX="72.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DNI" />
-      <TextField layoutX="222.0" layoutY="286.0" />
-      <Text layoutX="72.0" layoutY="382.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TELÉFONO" />
-      <TextField layoutX="222.0" layoutY="370.0" />
-      <TextField layoutX="222.0" layoutY="445.0" />
-      <Text layoutX="74.0" layoutY="462.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CP" />
-      <Text layoutX="76.0" layoutY="544.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NOTA" />
-      <TextField layoutX="222.0" layoutY="515.0" />
+      <TextField layoutX="293.0" layoutY="136.0" />
+      <Text layoutX="66.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NOMBRE CICLO" />
+      <Text layoutX="68.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GRADO" />
+      <TextField layoutX="293.0" layoutY="209.0" />
+      <Text layoutX="72.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FAMILIA PROFESIONAL" />
+      <TextField layoutX="293.0" layoutY="286.0" />
+      <Text layoutX="72.0" layoutY="382.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PERIODO PRÁCTICAS" />
+      <TextField layoutX="293.0" layoutY="364.0" />
+      <TextField layoutX="293.0" layoutY="444.0" />
+      <Text layoutX="74.0" layoutY="462.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CAPACIDADES TERMINALES" />
+      <Text layoutX="76.0" layoutY="544.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ACTIVIDADES" />
+      <TextField layoutX="293.0" layoutY="517.0" />
       <Button layoutX="611.0" layoutY="559.0" mnemonicParsing="false" prefHeight="77.0" prefWidth="185.0" text="Añadir" textFill="#fcf8f8" />
       <TableView layoutX="610.0" layoutY="85.0" prefHeight="449.0" prefWidth="616.0">
         <columns>
@@ -45,5 +45,7 @@
       </TableView>
       <Button layoutX="827.0" layoutY="559.0" mnemonicParsing="false" prefHeight="77.0" prefWidth="185.0" text="Modificar" textFill="#fcf8f8" />
       <Button layoutX="1045.0" layoutY="559.0" mnemonicParsing="false" prefHeight="77.0" prefWidth="185.0" text="Borrar" textFill="#fcf8f8" />
+      <Text layoutX="77.0" layoutY="616.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CRITERIOS DE EVALUACION" />
+      <TextField layoutX="293.0" layoutY="598.0" />
    </children>
 </AnchorPane>

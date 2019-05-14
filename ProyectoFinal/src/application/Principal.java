@@ -32,16 +32,68 @@ public class Principal {
 	}
 
 	//Método cuando se aprieta el botón
-	public void pressedButton(ActionEvent event) throws IOException{
+	public void pressedButton1(ActionEvent event) throws IOException{
 
 		FXMLLoader loader = new FXMLLoader(Main.class.getResource("datosalumno.fxml"));
 		AnchorPane ventanaDos = (AnchorPane) loader.load();
-        Stage ventana = new Stage();
-        ventana.setTitle("Venta Dos");
+        Stage ventana2 = new Stage();
+        ventana2.setTitle("Datos alumno");
         Scene scene = new Scene(ventanaDos);
-        ventana.setScene(scene);
-        ventana.show();
+        ventana2.setScene(scene);
+        ventana2.show();
+        
+       
 	}
+	public void pressedButton2(ActionEvent event) throws IOException{
+
+		FXMLLoader loader = new FXMLLoader(Main.class.getResource("datosempresa.fxml"));
+		AnchorPane ventanaTres = (AnchorPane) loader.load();
+        Stage ventana3 = new Stage();
+        ventana3.setTitle("Datos empresa");
+        Scene scene = new Scene(ventanaTres);
+        ventana3.setScene(scene);
+        ventana3.show();
+        
+       
+	}
+	public void pressedButton3(ActionEvent event) throws IOException{
+
+		FXMLLoader loader = new FXMLLoader(Main.class.getResource("datosciclo.fxml"));
+		AnchorPane ventanaCuatro = (AnchorPane) loader.load();
+        Stage ventana4 = new Stage();
+        ventana4.setTitle("Datos ciclo");
+        Scene scene = new Scene(ventanaCuatro);
+        ventana4.setScene(scene);
+        ventana4.show();
+        
+       
+	}
+	
+	public void pressedButton4(ActionEvent event) throws IOException{
+
+		FXMLLoader loader = new FXMLLoader(Main.class.getResource("tutorcentro.fxml"));
+		AnchorPane ventanaCinco = (AnchorPane) loader.load();
+        Stage ventana5 = new Stage();
+        ventana5.setTitle("Datos tutor centro");
+        Scene scene = new Scene(ventanaCinco);
+        ventana5.setScene(scene);
+        ventana5.show();
+        
+       
+	}
+	public void pressedButton5(ActionEvent event) throws IOException{
+
+		FXMLLoader loader = new FXMLLoader(Main.class.getResource("vinculacion.fxml"));
+		AnchorPane ventanaSexta = (AnchorPane) loader.load();
+        Stage ventana6 = new Stage();
+        ventana6.setTitle("Datos vinculacion");
+        Scene scene = new Scene(ventanaSexta);
+        ventana6.setScene(scene);
+        ventana6.show();
+        
+       
+	}
+	
 	
 	
 }
