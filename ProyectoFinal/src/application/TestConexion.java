@@ -56,6 +56,114 @@ public class TestConexion {
 		}
 
 	}
+	
+public String ConsultaAlumnos() {
+		
+		String aux = "";
+		
+		try {
+			Statement stmt = conexion.createStatement();
+			ResultSet rset = stmt.executeQuery("SELECT * FROM BASE.ALUMNO" );
+			while(rset.next()) {
+				aux += rset.getInt(1) + " " + rset.getString(2) ;
+				aux += "\n";
+			}
+			rset.close();
+			stmt.close();
+			
+		}catch (SQLException s){
+			s.printStackTrace();
+		}
+		return aux;
+		
+	}
+public String ConsultaEmpresa() {
+	
+	String aux = "";
+	
+	try {
+		Statement stmt = conexion.createStatement();
+		ResultSet rset = stmt.executeQuery("SELECT * FROM BASE.EMPRESA" );
+		while(rset.next()) {
+			aux += rset.getInt(1) + " " + rset.getString(2) ;
+			aux += "\n";
+		}
+		rset.close();
+		stmt.close();
+		
+	}catch (SQLException s){
+		s.printStackTrace();
+	}
+	return aux;
+	
+}
+
+public String ConsultaCiclo() {
+	
+	String aux = "";
+	
+	try {
+		Statement stmt = conexion.createStatement();
+		ResultSet rset = stmt.executeQuery("SELECT * FROM BASE.CICLO" );
+		while(rset.next()) {
+			aux += rset.getInt(1) + " " + rset.getString(2) ;
+			aux += "\n";
+		}
+		rset.close();
+		stmt.close();
+		
+	}catch (SQLException s){
+		s.printStackTrace();
+	}
+	return aux;
+	
+}
+
+public String ConsultaTutorCentro() {
+	
+	String aux = "";
+	
+	try {
+		Statement stmt = conexion.createStatement();
+		ResultSet rset = stmt.executeQuery("SELECT * FROM BASE.TUTORCENTRO" );
+		while(rset.next()) {
+			aux += rset.getInt(1) + " " + rset.getString(2) ;
+			aux += "\n";
+		}
+		rset.close();
+		stmt.close();
+		
+	}catch (SQLException s){
+		s.printStackTrace();
+	}
+	return aux;
+	
+}
+
+public String ConsultaVinculacion() {
+	
+	String aux = "";
+	
+	try {
+		Statement stmt = conexion.createStatement();
+		ResultSet rset = stmt.executeQuery("SELECT * FROM BASE.HACEPRACTICA" );
+		while(rset.next()) {
+			aux += rset.getInt(1) + " " + rset.getString(2) ;
+			aux += "\n";
+		}
+		rset.close();
+		stmt.close();
+		
+	}catch (SQLException s){
+		s.printStackTrace();
+	}
+	return aux;
+	
+}
+	
+	
+	
+	
 
 	public static void main(String[] args) throws SQLException {
 		// TODO Auto-generated method stub
