@@ -1,4 +1,5 @@
 package application;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -56,120 +57,139 @@ public class TestConexion {
 		}
 
 	}
-	
-public String ConsultaAlumnos() {
-		
+
+	public String ConsultaAlumnos() {
+
 		String aux = "";
-		
+
 		try {
 			Statement stmt = conexion.createStatement();
-			ResultSet rset = stmt.executeQuery("SELECT * FROM BASE.ALUMNO" );
-			while(rset.next()) {
-				aux += rset.getInt(1) + " " + rset.getString(2) ;
+			ResultSet rset = stmt.executeQuery("SELECT * FROM BASEDEDATOS.ALUMNO");
+			while (rset.next()) {
+				aux += rset.getInt(1) + " " + rset.getString(2);
 				aux += "\n";
 			}
 			rset.close();
 			stmt.close();
-			
-		}catch (SQLException s){
+
+		} catch (SQLException s) {
 			s.printStackTrace();
 		}
 		return aux;
-		
+
 	}
-public String ConsultaEmpresa() {
-	
-	String aux = "";
-	
-	try {
-		Statement stmt = conexion.createStatement();
-		ResultSet rset = stmt.executeQuery("SELECT * FROM BASE.EMPRESA" );
-		while(rset.next()) {
-			aux += rset.getInt(1) + " " + rset.getString(2) ;
-			aux += "\n";
+
+	public String ConsultaEmpresa() {
+
+		String aux = "";
+
+		try {
+			Statement stmt = conexion.createStatement();
+			ResultSet rset = stmt.executeQuery("SELECT * FROM BASEDEDATOS.EMPRESA");
+			while (rset.next()) {
+				aux += rset.getInt(1) + " " + rset.getString(2);
+				aux += "\n";
+			}
+			rset.close();
+			stmt.close();
+
+		} catch (SQLException s) {
+			s.printStackTrace();
 		}
-		rset.close();
-		stmt.close();
-		
-	}catch (SQLException s){
-		s.printStackTrace();
-	}
-	return aux;
-	
-}
+		return aux;
 
-public String ConsultaCiclo() {
-	
-	String aux = "";
-	
-	try {
-		Statement stmt = conexion.createStatement();
-		ResultSet rset = stmt.executeQuery("SELECT * FROM BASE.CICLO" );
-		while(rset.next()) {
-			aux += rset.getInt(1) + " " + rset.getString(2) ;
-			aux += "\n";
+	}
+
+	public String ConsultaCiclo() {
+
+		String aux = "";
+
+		try {
+			Statement stmt = conexion.createStatement();
+			ResultSet rset = stmt.executeQuery("SELECT * FROM BASEDEDATOS.CICLO");
+			while (rset.next()) {
+				aux += rset.getInt(1) + " " + rset.getString(2);
+				aux += "\n";
+			}
+			rset.close();
+			stmt.close();
+
+		} catch (SQLException s) {
+			s.printStackTrace();
 		}
-		rset.close();
-		stmt.close();
-		
-	}catch (SQLException s){
-		s.printStackTrace();
-	}
-	return aux;
-	
-}
+		return aux;
 
-public String ConsultaTutorCentro() {
-	
-	String aux = "";
-	
-	try {
-		Statement stmt = conexion.createStatement();
-		ResultSet rset = stmt.executeQuery("SELECT * FROM BASE.TUTORCENTRO" );
-		while(rset.next()) {
-			aux += rset.getInt(1) + " " + rset.getString(2) ;
-			aux += "\n";
+	}
+
+	public String ConsultaTutorCentro() {
+
+		String aux = "";
+
+		try {
+			Statement stmt = conexion.createStatement();
+			ResultSet rset = stmt.executeQuery("SELECT * FROM BASEDEDATOS.TUTORCENTRO");
+			while (rset.next()) {
+				aux += rset.getInt(1) + " " + rset.getString(2);
+				aux += "\n";
+			}
+			rset.close();
+			stmt.close();
+
+		} catch (SQLException s) {
+			s.printStackTrace();
 		}
-		rset.close();
-		stmt.close();
-		
-	}catch (SQLException s){
-		s.printStackTrace();
-	}
-	return aux;
-	
-}
+		return aux;
 
-public String ConsultaVinculacion() {
-	
-	String aux = "";
-	
-	try {
-		Statement stmt = conexion.createStatement();
-		ResultSet rset = stmt.executeQuery("SELECT * FROM BASE.HACEPRACTICA" );
-		while(rset.next()) {
-			aux += rset.getInt(1) + " " + rset.getString(2) ;
-			aux += "\n";
+	}
+
+	public String ConsultaVinculacion() {
+
+		String aux = "";
+
+		try {
+			Statement stmt = conexion.createStatement();
+			ResultSet rset = stmt.executeQuery("SELECT * FROM BASEDEDATOS.HACEPRACTICA");
+			while (rset.next()) {
+				aux += rset.getInt(1) + " " + rset.getString(2);
+				aux += "\n";
+			}
+			rset.close();
+			stmt.close();
+
+		} catch (SQLException s) {
+			s.printStackTrace();
 		}
-		rset.close();
-		stmt.close();
+		return aux;
+
+	}
+
+public static int InsertAlumno(DatosAlumno mialumno) throws SQLException{
 		
-	}catch (SQLException s){
-		s.printStackTrace();
-	}
-	return aux;
-	
+		Statement stmt = conexion.createStatement();
+	    int num = stmt.executeUpdate("INSERT INTO BASEDEDATOS.ALUMNO VALUES (" + "'" + mialumno.DNI + "'" + "," + "'" + mialumno.Nombre + "'" + "," + "'" + mialumno.Apellido + "'" + "," + "'" + mialumno.Telefono + "'" + "," + mialumno.Nota + "," + "'" + mialumno.CP + "'" + "," + mialumno.dnitutor + ")");
+		return num;
 }
 	
+public static int InsertEmpresa(DatosEmpresa miempresa) throws SQLException{
 	
-	
-	
-
-	public static void main(String[] args) throws SQLException {
-		// TODO Auto-generated method stub
-
-		new TestConexion();
-
-	}
-
+	Statement stmt = conexion.createStatement();
+    int num = stmt.executeUpdate("INSERT INTO BASEDEDATOS.EMPRESA VALUES (" + "'" + miempresa.IdEmpresa + "'" + "," + "'" + miempresa.NombreEmpresa + "'" + "," + "'" + miempresa.Convenio + "'" + "," + "'" + miempresa.CiudadFirmaCov + "'" + "," + "'" + miempresa.FechaFirmaConv + "'" + "," + "'" + miempresa.Representante + "'" + "," + "'" + miempresa.DNITutorEmp + "'" + "," + "'" + miempresa.EmailtutorEmp + "'" + ")");
+	return num;
 }
+		
+public static int InsertCiclo(DatosCiclo miciclo) throws SQLException{
+	
+	Statement stmt = conexion.createStatement();
+    int num = stmt.executeUpdate("INSERT INTO BASEDEDATOS.CICLO VALUES (" + "'" + miciclo.idciclo + "'" + "," + "'" + miciclo.nombre + "'" + "," + "'" + miciclo.grado + "'" + "," + "'" + miciclo.periodopracticas + "'" + "," + "'" + miciclo.familiaprofesional + "'" + "," + "'" + miciclo.capacidadesterminales + "'" + "," + "'" + miciclo.actividades + "'" + "," + "'" + miciclo.criteriosevaluacion + "'" + ")");
+	return num;
+}
+public static int InsertTutorCentro(DatosTutorCentro mitutor) throws SQLException{
+	
+	Statement stmt = conexion.createStatement();
+    int num = stmt.executeUpdate("INSERT INTO BASEDEDATOS.TUTORCENTRO VALUES (" + "'" + mitutor.dnitutor + "'" + "," + "'" + mitutor.nombre + "'" + "," + "'" + mitutor.apellidos + "'" + "," + "'" + mitutor.emailtutor + "'" + ")");
+	return num;
+}
+		}
+
+	
+

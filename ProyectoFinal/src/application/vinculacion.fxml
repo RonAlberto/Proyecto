@@ -14,7 +14,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="683.0" prefWidth="1302.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="683.0" prefWidth="1302.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.vinculacion">
    <children>
       <ImageView fitHeight="690.0" fitWidth="1302.0" layoutY="-6.0">
          <image>
@@ -31,11 +31,11 @@
       <Text layoutX="29.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EMPRESA:" />
       <Text layoutX="73.0" layoutY="268.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NOMBRE" />
       <Text layoutX="32.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ALUMNO:" />
-      <Button layoutX="637.0" layoutY="528.0" mnemonicParsing="false" prefHeight="111.0" prefWidth="267.0" text="Modificar" textFill="#fcf8f8" />
-      <Button layoutX="953.0" layoutY="528.0" mnemonicParsing="false" prefHeight="111.0" prefWidth="267.0" text="Borrar" textFill="#fcfafa" />
-      <Button layoutX="205.0" layoutY="590.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="119.0" text="Vincular" textFill="#fcf8f8" />
-      <ChoiceBox layoutX="155.0" layoutY="132.0" prefWidth="150.0" />
-      <ChoiceBox layoutX="152.0" layoutY="249.0" prefWidth="150.0" />
+      <Button fx:id="Modificar" layoutX="637.0" layoutY="528.0" mnemonicParsing="false" onAction="#initialize" prefHeight="111.0" prefWidth="267.0" text="Modificar" textFill="#fcf8f8" />
+      <Button fx:id="Borrar" layoutX="953.0" layoutY="528.0" mnemonicParsing="false" onAction="#initialize" prefHeight="111.0" prefWidth="267.0" text="Borrar" textFill="#fcfafa" />
+      <Button fx:id="Vincular" layoutX="205.0" layoutY="590.0" mnemonicParsing="false" onAction="#initialize" prefHeight="61.0" prefWidth="119.0" text="Vincular" textFill="#fcf8f8" />
+      <ChoiceBox fx:id="NomAlumno" layoutX="155.0" layoutY="132.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="NomEmpresa" layoutX="152.0" layoutY="249.0" prefWidth="150.0" />
       <TableView layoutX="638.0" layoutY="90.0" prefHeight="420.0" prefWidth="578.0">
         <columns>
           <TableColumn prefWidth="141.0" text="NOMBRE ALUMNO" />
@@ -49,21 +49,21 @@
       <Text layoutX="34.0" layoutY="514.0" strokeType="OUTSIDE" strokeWidth="0.0" text="INICIO PRACTICAS" />
       <Text layoutX="255.0" layoutY="514.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FIN PRACTICAS" />
       <Text layoutX="72.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="APELLIDOS" />
-      <ChoiceBox layoutX="155.0" layoutY="169.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="NomApellidos" layoutX="155.0" layoutY="169.0" prefWidth="150.0" />
       <Text layoutX="33.0" layoutY="334.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HORARIO MAÑANA:" />
       <Text layoutX="53.0" layoutY="448.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HORARIO ENTRADA" />
       <Text layoutX="305.0" layoutY="447.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HORARIO SALIDA" />
-      <TextField layoutX="183.0" layoutY="430.0" prefHeight="26.0" prefWidth="95.0" />
-      <TextField layoutX="434.0" layoutY="430.0" prefHeight="26.0" prefWidth="95.0" />
+      <TextField fx:id="horarioentradaTar" layoutX="183.0" layoutY="430.0" prefHeight="26.0" prefWidth="95.0" />
+      <TextField fx:id="horariosalidaTar" layoutX="434.0" layoutY="430.0" prefHeight="26.0" prefWidth="95.0" />
       <Text layoutX="349.0" layoutY="267.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TUTOR" />
-      <ChoiceBox layoutX="410.0" layoutY="248.0" prefHeight="28.0" prefWidth="105.0" />
+      <ChoiceBox fx:id="Tutorempresa" layoutX="410.0" layoutY="248.0" prefHeight="28.0" prefWidth="105.0" />
       <Separator layoutX="33.0" layoutY="213.0" prefHeight="2.0" prefWidth="490.0" />
       <Separator layoutX="39.0" layoutY="299.0" prefHeight="2.0" prefWidth="490.0" />
       <Separator layoutX="39.0" layoutY="482.0" prefHeight="2.0" prefWidth="490.0" />
       <Text layoutX="31.0" layoutY="412.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HORARIO TARDE:" />
       <Text layoutX="53.0" layoutY="366.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HORARIO ENTRADA" />
-      <TextField layoutX="183.0" layoutY="348.0" prefHeight="26.0" prefWidth="95.0" />
-      <TextField layoutX="434.0" layoutY="347.0" prefHeight="26.0" prefWidth="95.0" />
+      <TextField fx:id="horarioentradaMa" layoutX="183.0" layoutY="348.0" prefHeight="26.0" prefWidth="95.0" />
+      <TextField fx:id="horariosalidaMa" layoutX="434.0" layoutY="347.0" prefHeight="26.0" prefWidth="95.0" />
       <Text layoutX="305.0" layoutY="365.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HORARIO SALIDA" />
    </children>
 </AnchorPane>

@@ -1,5 +1,7 @@
 package application;
 
+import java.sql.SQLException;
+
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
@@ -47,9 +49,11 @@ public class ciclo {
 	   private TextField myTextField6;
 	   @FXML
 	   private TextField myTextField7;
+	   @FXML
+	   private TextField myTextField8;
 	   
 	   @FXML
-	   private Button Añadir;
+	   private Button Anadir;
 	   @FXML
 	   private Button Modificar;
 	   @FXML
@@ -59,6 +63,13 @@ public class ciclo {
 	   private void initialize(){
 	}
 
+	   @FXML
+		public void anadirciclo() throws SQLException {
+			
+			DatosCiclo miciclo = new DatosCiclo(myTextField1.getText(),myTextField2.getText(),myTextField3.getText(),myTextField4.getText(),myTextField5.getText(),myTextField6.getText(),myTextField7.getText(),myTextField8.getText());
+			TestConexion conexionbbdd = new TestConexion();
+			conexionbbdd.InsertCiclo(miciclo);
+		}
 }
 
 
