@@ -9,22 +9,22 @@ public class DatosAlumno {
 	public int Nota;
 	public String CP;
 	public String dnitutor;
-	public DatosAlumno(String DNI, String nombre, String apellido, String telefono, int nota, String CP,
+	public DatosAlumno(String dNI, String nombre, String apellido, String telefono, int nota, String cP,
 			String dnitutor) {
 		super();
-		DNI = DNI;
+		DNI = dNI;
 		Nombre = nombre;
 		Apellido = apellido;
 		Telefono = telefono;
 		Nota = nota;
-		CP = CP;
+		CP = cP;
 		this.dnitutor = dnitutor;
 	}
 	public String getDNI() {
 		return DNI;
 	}
-	public void setDNI(String DNI) {
-		DNI = DNI;
+	public void setDNI(String dNI) {
+		DNI = dNI;
 	}
 	public String getNombre() {
 		return Nombre;
@@ -53,8 +53,8 @@ public class DatosAlumno {
 	public String getCP() {
 		return CP;
 	}
-	public void setCP(String CP) {
-		CP = CP;
+	public void setCP(String cP) {
+		CP = cP;
 	}
 	public String getDnitutor() {
 		return dnitutor;
@@ -62,7 +62,6 @@ public class DatosAlumno {
 	public void setDnitutor(String dnitutor) {
 		this.dnitutor = dnitutor;
 	}
-	
 	
 	
 }
