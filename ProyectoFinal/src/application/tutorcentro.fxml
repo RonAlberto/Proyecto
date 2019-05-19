@@ -35,8 +35,10 @@
       <Button fx:id="Anadir" layoutX="611.0" layoutY="559.0" mnemonicParsing="false" onAction="#anadirTutorCentro" prefHeight="77.0" prefWidth="185.0" text="Añadir" textFill="#fcf8f8" />
       <TableView layoutX="610.0" layoutY="85.0" prefHeight="449.0" prefWidth="616.0">
         <columns>
-          <TableColumn prefWidth="283.0" text="C1" />
-          <TableColumn prefWidth="298.0" text="C2" />
+          <TableColumn fx:id="ColDniTutor" prefWidth="134.0" text="DNI TUTOR" />
+          <TableColumn fx:id="ColNombre" prefWidth="154.0" text="NOMBRE" />
+            <TableColumn fx:id="ColApellidos" prefWidth="147.0" text="APELLIDOS" />
+            <TableColumn fx:id="ColEmail" prefWidth="178.0" text="EMAIL" />
         </columns>
       </TableView>
       <Button layoutX="827.0" layoutY="559.0" mnemonicParsing="false" prefHeight="77.0" prefWidth="185.0" text="Modificar" textFill="#fcf8f8" />

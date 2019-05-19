@@ -13,25 +13,28 @@ public class alumno {
 		
 
 	@FXML
-	private TableView<alumno> Tabla;
+	private TableView<DatosAlumno> Tabla;
+	
+	@FXML
+	private TableColumn<DatosAlumno, String> ColDni;
 
 	@FXML
-	private TableColumn<alumno, String> ColNombre;
+	private TableColumn<DatosAlumno, String> ColNombre;
 
 	@FXML
-	private TableColumn<alumno, String> ColApellido;
+	private TableColumn<DatosAlumno, String> ColApellido;
 
 	@FXML
-	private TableColumn<alumno, String> ColDni;
+	private TableColumn<DatosAlumno, String> ColTelefono;
 
 	@FXML
-	private TableColumn<alumno, String> ColTelefono;
-
+	private TableColumn<DatosAlumno, String> ColNota;
+	
 	@FXML
-	private TableColumn<alumno, String> ColCp;
-
+	private TableColumn<DatosAlumno, String> ColCp;
+	
 	@FXML
-	private TableColumn<alumno, String> ColNota;
+	private TableColumn<DatosAlumno, String> ColDniTutor;
 
 	@FXML
 	private TextField myTextField1;
@@ -66,6 +69,7 @@ public class alumno {
 		TestConexion conexionbbdd = new TestConexion();
 		conexionbbdd.InsertAlumno(mialumno);
 	}
+	
 	
 
 	

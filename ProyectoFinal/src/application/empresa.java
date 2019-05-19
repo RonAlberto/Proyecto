@@ -12,53 +12,56 @@ public class empresa {
 	
 	
 	@FXML
-	private TableView<empresa> Tabla;
+	private TableView<DatosEmpresa> Tabla;
+	
+	@FXML
+	private TableColumn<DatosEmpresa,String> ColIdEmpresa;
 
 	@FXML
-	private TableColumn<empresa,String> ColNombre;
+	private TableColumn<DatosEmpresa,String> ColNombre;
+	
+	@FXML
+	private TableColumn<DatosEmpresa,String> ColConvenio;
+	
+	@FXML
+	private TableColumn<DatosEmpresa,String> ColCiudad;
+	
+	@FXML
+	private TableColumn<DatosEmpresa,String> ColFecha;
+	
+	@FXML
+	private TableColumn<DatosEmpresa,String> ColRepresentante;
 
 	@FXML
-	private TableColumn<empresa,String> ColTutor;
+	private TableColumn<DatosEmpresa,String> ColDniTutor;
 	
 	@FXML
-	private TableColumn<empresa,String> ColRepresentante;
-
-	@FXML
-	private TableColumn<empresa,String> ColEmail;
+	private TableColumn<DatosEmpresa,String> ColEmailTutorEmpresa;
+	
 	
 	@FXML
-	private TableColumn<empresa,String> ColConvenio;
-	
+	private TextField myTextField1;
 	@FXML
-	private TableColumn<empresa,String> ColCiudad;
-	
+	private TextField myTextField2;
 	@FXML
-	private TableColumn<empresa,String> ColFecha;
-	
-	
-	   @FXML
-	   private TextField myTextField1;
-	   @FXML
-	   private TextField myTextField2;
-	   @FXML
-	   private TextField myTextField3;
-	   @FXML
-	   private TextField myTextField4;
-	   @FXML
-	   private TextField myTextField5;
-	   @FXML
-	   private TextField myTextField6;
-	   @FXML
-	   private TextField myTextField7;
-	   @FXML
-	   private TextField myTextField8;
+	private TextField myTextField3;
+	@FXML
+	private TextField myTextField4;
+	@FXML
+	private TextField myTextField5;
+	@FXML
+	private TextField myTextField6;
+	@FXML
+	private TextField myTextField7;
+	@FXML
+	private TextField myTextField8;
 	   
-	   @FXML
-	   private Button Anadir;
-	   @FXML
-	   private Button Modificar;
-	   @FXML
-	   private Button Borrar;
+	@FXML
+	private Button Anadir;
+	@FXML
+	private Button Modificar;
+    @FXML
+	private Button Borrar;
 	
 	   @FXML
 	   private void initialize(){

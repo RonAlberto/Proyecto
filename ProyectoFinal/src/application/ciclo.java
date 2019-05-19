@@ -12,28 +12,31 @@ public class ciclo {
 	
 
 	@FXML
-	private TableView<ciclo> Tabla;
+	private TableView<DatosCiclo> Tabla;
+	
+	@FXML
+	private TableColumn<DatosCiclo,String> ColIdCiclo;
 
 	@FXML
-	private TableColumn<ciclo,String> ColNombre;
+	private TableColumn<DatosCiclo,String> ColNombre;
 
 	@FXML
-	private TableColumn<ciclo,String> ColGrado;
+	private TableColumn<DatosCiclo,String> ColGrado;
 	
 	@FXML
-	private TableColumn<ciclo,String> ColFamilia;
+	private TableColumn<DatosCiclo,String> ColPeriodo;
+	
+	@FXML
+	private TableColumn<DatosCiclo,String> ColFamilia;
 
 	@FXML
-	private TableColumn<ciclo,String> ColPeriodo;
+	private TableColumn<DatosCiclo,String> ColCapacidades;
 	
 	@FXML
-	private TableColumn<ciclo,String> ColCapacidades;
+	private TableColumn<DatosCiclo,String> ColActividades;
 	
 	@FXML
-	private TableColumn<ciclo,String> ColActividades;
-	
-	@FXML
-	private TableColumn<ciclo,String> ColCriterios;
+	private TableColumn<DatosCiclo,String> ColCriterios;
 	
 	 @FXML
 	   private TextField myTextField1;

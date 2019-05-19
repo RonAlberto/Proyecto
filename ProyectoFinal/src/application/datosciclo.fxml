@@ -24,30 +24,36 @@
             <Font name="Malgun Gothic" size="24.0" />
          </font>
       </Text>
-      <TextField fx:id="myTextField2" layoutX="293.0" layoutY="171.0" onAction="#initialize" />
-      <Text layoutX="66.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NOMBRE CICLO" />
-      <Text layoutX="69.0" layoutY="251.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GRADO" />
-      <TextField fx:id="myTextField3" layoutX="293.0" layoutY="233.0" onAction="#initialize" />
-      <Text layoutX="71.0" layoutY="313.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PERIODO DE PRACTICAS" />
-      <TextField fx:id="myTextField4" layoutX="293.0" layoutY="295.0" onAction="#initialize" />
-      <Text layoutX="77.0" layoutY="385.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FAMILIA PROFESIONAL" />
-      <TextField fx:id="myTextField5" layoutX="293.0" layoutY="358.0" onAction="#initialize" />
-      <TextField fx:id="myTextField6" layoutX="293.0" layoutY="434.0" onAction="#initialize" />
-      <Text layoutX="74.0" layoutY="452.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CAPACIDADES TERMINALES" />
-      <Text layoutX="77.0" layoutY="515.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ACTIVIDADES" />
-      <TextField fx:id="myTextField7" layoutX="293.0" layoutY="497.0" onAction="#initialize" />
+      <TextField fx:id="myTextField2" layoutX="247.0" layoutY="171.0" onAction="#initialize" />
+      <Text layoutX="55.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NOMBRE CICLO" />
+      <Text layoutX="57.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GRADO" />
+      <TextField fx:id="myTextField3" layoutX="247.0" layoutY="233.0" onAction="#initialize" />
+      <Text layoutX="57.0" layoutY="312.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PERIODO DE PRACTICAS" />
+      <TextField fx:id="myTextField4" layoutX="247.0" layoutY="295.0" onAction="#initialize" />
+      <Text layoutX="61.0" layoutY="375.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FAMILIA PROFESIONAL" />
+      <TextField fx:id="myTextField5" layoutX="247.0" layoutY="358.0" onAction="#initialize" />
+      <TextField fx:id="myTextField6" layoutX="247.0" layoutY="422.0" onAction="#initialize" />
+      <Text layoutX="61.0" layoutY="439.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CAPACIDADES TERMINALES" />
+      <Text layoutX="61.0" layoutY="501.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ACTIVIDADES" />
+      <TextField fx:id="myTextField7" layoutX="247.0" layoutY="484.0" onAction="#initialize" />
       <Button fx:id="Anadir" layoutX="611.0" layoutY="559.0" mnemonicParsing="false" onAction="#anadirciclo" prefHeight="77.0" prefWidth="185.0" text="Añadir" textFill="#fcf8f8" />
-      <TableView layoutX="610.0" layoutY="85.0" prefHeight="449.0" prefWidth="616.0">
+      <TableView layoutX="483.0" layoutY="85.0" prefHeight="447.0" prefWidth="792.0">
         <columns>
-          <TableColumn prefWidth="283.0" text="C1" />
-          <TableColumn prefWidth="298.0" text="C2" />
+          <TableColumn fx:id="ColIdCiclo" prefWidth="94.0" text="ID CICLO" />
+          <TableColumn fx:id="ColNombre" prefWidth="105.0" text="NOMBRE" />
+            <TableColumn fx:id="ColGrado" prefWidth="94.0" text="GRADO" />
+            <TableColumn fx:id="ColPeriodo" prefWidth="70.0" text="PERIODO PRACTICAS" />
+            <TableColumn fx:id="ColFamilia" prefWidth="117.0" text="FAMILIA PROFESIONAL" />
+            <TableColumn fx:id="ColCapacidades" prefWidth="133.0" text="CAPACIDADES" />
+            <TableColumn fx:id="ColActividades" prefWidth="70.0" text="ACTIVIDADES" />
+            <TableColumn fx:id="ColCriterios" prefWidth="126.0" text="CRITERIOS" />
         </columns>
       </TableView>
       <Button layoutX="827.0" layoutY="559.0" mnemonicParsing="false" prefHeight="77.0" prefWidth="185.0" text="Modificar" textFill="#fcf8f8" />
       <Button layoutX="1045.0" layoutY="559.0" mnemonicParsing="false" prefHeight="77.0" prefWidth="185.0" text="Borrar" textFill="#fcf8f8" />
-      <Text layoutX="61.0" layoutY="571.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CRITERIOS DE EVALUACION" />
-      <TextField fx:id="myTextField8" layoutX="293.0" layoutY="553.0" onAction="#initialize" />
-      <Text layoutX="66.0" layoutY="128.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IDCICLO" />
-      <TextField fx:id="myTextField1" layoutX="293.0" layoutY="110.0" onAction="#initialize" />
+      <Text layoutX="59.0" layoutY="558.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CRITERIOS DE EVALUACION" />
+      <TextField fx:id="myTextField8" layoutX="247.0" layoutY="541.0" onAction="#initialize" />
+      <Text layoutX="55.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IDCICLO" />
+      <TextField fx:id="myTextField1" layoutX="247.0" layoutY="110.0" onAction="#initialize" />
    </children>
 </AnchorPane>

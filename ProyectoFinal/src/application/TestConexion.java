@@ -64,7 +64,7 @@ public class TestConexion {
 
 		try {
 			Statement stmt = conexion.createStatement();
-			ResultSet rset = stmt.executeQuery("SELECT * FROM BASE.ALUMNO");
+			ResultSet rset = stmt.executeQuery("SELECT * FROM DATOS.ALUMNO");
 			while (rset.next()) {
 				aux += rset.getInt(1) + " " + rset.getString(2);
 				aux += "\n";
@@ -85,7 +85,7 @@ public class TestConexion {
 
 		try {
 			Statement stmt = conexion.createStatement();
-			ResultSet rset = stmt.executeQuery("SELECT * FROM BASE.EMPRESA");
+			ResultSet rset = stmt.executeQuery("SELECT * FROM DATOS.EMPRESA");
 			while (rset.next()) {
 				aux += rset.getInt(1) + " " + rset.getString(2);
 				aux += "\n";
@@ -106,7 +106,7 @@ public class TestConexion {
 
 		try {
 			Statement stmt = conexion.createStatement();
-			ResultSet rset = stmt.executeQuery("SELECT * FROM BASE.CICLO");
+			ResultSet rset = stmt.executeQuery("SELECT * FROM DATOS.CICLO");
 			while (rset.next()) {
 				aux += rset.getInt(1) + " " + rset.getString(2);
 				aux += "\n";
@@ -127,7 +127,7 @@ public class TestConexion {
 
 		try {
 			Statement stmt = conexion.createStatement();
-			ResultSet rset = stmt.executeQuery("SELECT * FROM BASE.TUTORCENTRO");
+			ResultSet rset = stmt.executeQuery("SELECT * FROM DATOS.TUTORCENTRO");
 			while (rset.next()) {
 				aux += rset.getInt(1) + " " + rset.getString(2);
 				aux += "\n";
@@ -148,7 +148,7 @@ public class TestConexion {
 
 		try {
 			Statement stmt = conexion.createStatement();
-			ResultSet rset = stmt.executeQuery("SELECT * FROM BASE.HACEPRACTICA");
+			ResultSet rset = stmt.executeQuery("SELECT * FROM DATOS.HACEPRACTICA");
 			while (rset.next()) {
 				aux += rset.getInt(1) + " " + rset.getString(2);
 				aux += "\n";
@@ -166,27 +166,27 @@ public class TestConexion {
 public static int InsertAlumno(DatosAlumno mialumno) throws SQLException{
 		
 		Statement stmt = conexion.createStatement();
-	    int num = stmt.executeUpdate("INSERT INTO BASE.ALUMNO VALUES (" + "'" + mialumno.DNI + "'" + "," + "'" + mialumno.Nombre + "'" + "," + "'" + mialumno.Apellido + "'" + "," + "'" + mialumno.Telefono + "'" + "," + mialumno.Nota + "," + "'" + mialumno.CP + "'" + "," + "'" + mialumno.dnitutor + "'" + ")");
+	    int num = stmt.executeUpdate("INSERT INTO DATOS.ALUMNO VALUES (" + "'" + mialumno.DNI + "'" + "," + "'" + mialumno.Nombre + "'" + "," + "'" + mialumno.Apellido + "'" + "," + "'" + mialumno.Telefono + "'" + "," + mialumno.Nota + "," + "'" + mialumno.CP + "'" + "," + "'" + mialumno.dnitutor + "'" + ")");
 		return num;
 }
 	
 public static int InsertEmpresa(DatosEmpresa miempresa) throws SQLException{
 	
 	Statement stmt = conexion.createStatement();
-    int num = stmt.executeUpdate("INSERT INTO BASE.EMPRESA VALUES (" + "'" + miempresa.IdEmpresa + "'" + "," + "'" + miempresa.NombreEmpresa + "'" + "," + "'" + miempresa.Convenio + "'" + "," + "'" + miempresa.CiudadFirmaCov + "'" + "," + "'" + miempresa.FechaFirmaConv + "'" + "," + "'" + miempresa.Representante + "'" + "," + "'" + miempresa.DNITutorEmp + "'" + "," + "'" + miempresa.EmailtutorEmp + "'" + ")");
+    int num = stmt.executeUpdate("INSERT INTO DATOS.EMPRESA VALUES (" + "'" + miempresa.IdEmpresa + "'" + "," + "'" + miempresa.NombreEmpresa + "'" + "," + "'" + miempresa.Convenio + "'" + "," + "'" + miempresa.CiudadFirmaCov + "'" + "," + "'" + miempresa.FechaFirmaConv + "'" + "," + "'" + miempresa.Representante + "'" + "," + "'" + miempresa.DNITutorEmp + "'" + "," + "'" + miempresa.EmailtutorEmp + "'" + ")");
 	return num;
 }
 		
 public static int InsertCiclo(DatosCiclo miciclo) throws SQLException{
 	
 	Statement stmt = conexion.createStatement();
-    int num = stmt.executeUpdate("INSERT INTO BASE.CICLO VALUES (" + "'" + miciclo.idciclo + "'" + "," + "'" + miciclo.nombre + "'" + "," + "'" + miciclo.grado + "'" + "," + "'" + miciclo.periodopracticas + "'" + "," + "'" + miciclo.familiaprofesional + "'" + "," + "'" + miciclo.capacidadesterminales + "'" + "," + "'" + miciclo.actividades + "'" + "," + "'" + miciclo.criteriosevaluacion + "'" + ")");
+    int num = stmt.executeUpdate("INSERT INTO DATOS.CICLO VALUES (" + "'" + miciclo.idciclo + "'" + "," + "'" + miciclo.nombre + "'" + "," + "'" + miciclo.grado + "'" + "," + "'" + miciclo.periodopracticas + "'" + "," + "'" + miciclo.familiaprofesional + "'" + "," + "'" + miciclo.capacidadesterminales + "'" + "," + "'" + miciclo.actividades + "'" + "," + "'" + miciclo.criteriosevaluacion + "'" + ")");
 	return num;
 }
 public static int InsertTutorCentro(DatosTutorCentro mitutor) throws SQLException{
 	
 	Statement stmt = conexion.createStatement();
-    int num = stmt.executeUpdate("INSERT INTO BASE.TUTORCENTRO VALUES (" + "'" + mitutor.dnitutor + "'" + "," + "'" + mitutor.nombre + "'" + "," + "'" + mitutor.apellidos + "'" + "," + "'" + mitutor.emailtutor + "'" + ")");
+    int num = stmt.executeUpdate("INSERT INTO DATOS.TUTORCENTRO VALUES (" + "'" + mitutor.dnitutor + "'" + "," + "'" + mitutor.nombre + "'" + "," + "'" + mitutor.apellidos + "'" + "," + "'" + mitutor.emailtutor + "'" + ")");
 	return num;
 }
 		}

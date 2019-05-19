@@ -24,30 +24,36 @@
             <Font name="Malgun Gothic" size="24.0" />
          </font>
       </Text>
-      <TextField fx:id="myTextField2" layoutX="293.0" layoutY="149.0" onAction="#initialize" />
-      <Text layoutX="66.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NOMBRE EMPRESA" />
-      <Text layoutX="69.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CONVENIO" />
-      <TextField fx:id="myTextField3" layoutX="293.0" layoutY="222.0" onAction="#initialize" />
-      <Text layoutX="72.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CIUDAD FIRMA CONVENIO" />
-      <TextField fx:id="myTextField4" layoutX="293.0" layoutY="286.0" onAction="#initialize" />
-      <Text layoutX="72.0" layoutY="382.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FECHA FIRMA CONVENIO" />
-      <TextField fx:id="myTextField5" layoutX="293.0" layoutY="364.0" onAction="#initialize" />
-      <TextField fx:id="myTextField6" layoutX="293.0" layoutY="444.0" onAction="#initialize" />
-      <Text layoutX="74.0" layoutY="462.0" strokeType="OUTSIDE" strokeWidth="0.0" text="REPRESENTANTE" />
-      <Text layoutX="76.0" layoutY="544.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DNI TUTOR" />
-      <TextField fx:id="myTextField7" layoutX="293.0" layoutY="517.0" onAction="#initialize" />
+      <TextField fx:id="myTextField2" layoutX="227.0" layoutY="162.0" onAction="#initialize" />
+      <Text layoutX="52.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NOMBRE EMPRESA" />
+      <Text layoutX="57.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CONVENIO" />
+      <TextField fx:id="myTextField3" layoutX="227.0" layoutY="222.0" onAction="#initialize" />
+      <Text layoutX="56.0" layoutY="303.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CIUDAD FIRMA CONVENIO" />
+      <TextField fx:id="myTextField4" layoutX="227.0" layoutY="286.0" onAction="#initialize" />
+      <Text layoutX="59.0" layoutY="369.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FECHA FIRMA CONVENIO" />
+      <TextField fx:id="myTextField5" layoutX="227.0" layoutY="352.0" onAction="#initialize" />
+      <TextField fx:id="myTextField6" layoutX="227.0" layoutY="414.0" onAction="#initialize" />
+      <Text layoutX="59.0" layoutY="431.0" strokeType="OUTSIDE" strokeWidth="0.0" text="REPRESENTANTE" wrappingWidth="90.0" />
+      <Text layoutX="57.0" layoutY="498.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DNI TUTOR" wrappingWidth="60.9140625" />
+      <TextField fx:id="myTextField7" layoutX="227.0" layoutY="481.0" onAction="#initialize" />
       <Button fx:id="Anadir" layoutX="611.0" layoutY="559.0" mnemonicParsing="false" onAction="#anadirempresa" prefHeight="77.0" prefWidth="185.0" text="Añadir" textFill="#fcf8f8" />
-      <TableView layoutX="610.0" layoutY="85.0" prefHeight="449.0" prefWidth="616.0">
+      <TableView layoutX="460.0" layoutY="85.0" prefHeight="453.0" prefWidth="825.0">
         <columns>
-          <TableColumn prefWidth="283.0" text="C1" />
-          <TableColumn prefWidth="298.0" text="C2" />
+          <TableColumn fx:id="ColIdEmpresa" prefWidth="87.0" text="ID EMPRESA" />
+          <TableColumn fx:id="ColNombre" prefWidth="111.0" text="NOMBRE" />
+            <TableColumn fx:id="ColConvenio" text="CONVENIO" />
+            <TableColumn fx:id="ColCiudad" prefWidth="93.0" text="CIUDAD" />
+            <TableColumn fx:id="ColFecha" prefWidth="88.0" text="FECHA" />
+            <TableColumn fx:id="ColRepresentante" prefWidth="122.0" text="REPRESENTANTE" />
+            <TableColumn fx:id="ColDniTutor" prefWidth="101.0" text="DNI TUTOR" />
+            <TableColumn fx:id="ColEmailTutorEmpresa" prefWidth="157.0" text="EMAIL " />
         </columns>
       </TableView>
       <Button layoutX="827.0" layoutY="559.0" mnemonicParsing="false" prefHeight="77.0" prefWidth="185.0" text="Modificar" textFill="#fcf8f8" />
       <Button layoutX="1045.0" layoutY="559.0" mnemonicParsing="false" prefHeight="77.0" prefWidth="185.0" text="Borrar" textFill="#fcf8f8" />
-      <Text layoutX="77.0" layoutY="616.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EMAIL TUTOR EMPRESA" />
-      <TextField fx:id="myTextField8" layoutX="293.0" layoutY="598.0" onAction="#initialize" />
-      <Text layoutX="66.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID EMPRESA" />
-      <TextField fx:id="myTextField1" layoutX="293.0" layoutY="100.0" onAction="#initialize" />
+      <Text layoutX="54.0" layoutY="555.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EMAIL TUTOR EMPRESA" />
+      <TextField fx:id="myTextField8" layoutX="227.0" layoutY="538.0" onAction="#initialize" />
+      <Text layoutX="54.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID EMPRESA" />
+      <TextField fx:id="myTextField1" layoutX="227.0" layoutY="108.0" onAction="#initialize" />
    </children>
 </AnchorPane>

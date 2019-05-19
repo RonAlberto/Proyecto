@@ -4,9 +4,26 @@ import java.sql.SQLException;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 
 public class tutorcentro {
+	
+	@FXML
+	private TableView<DatosTutorCentro> Tabla;
+	
+	@FXML
+	private TableColumn<DatosTutorCentro,String> ColDniTutor;
+
+	@FXML
+	private TableColumn<DatosTutorCentro,String> ColNombre;
+
+	@FXML
+	private TableColumn<DatosTutorCentro,String> ColApellidos;
+	
+	@FXML
+	private TableColumn<DatosTutorCentro,String> ColEmail;
 
 	@FXML
 	private TextField myTextField1;
