@@ -37,7 +37,7 @@
       <Text layoutX="57.0" layoutY="498.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DNI TUTOR" wrappingWidth="60.9140625" />
       <TextField fx:id="myTextField7" layoutX="227.0" layoutY="481.0" onAction="#initialize" />
       <Button fx:id="Anadir" layoutX="611.0" layoutY="559.0" mnemonicParsing="false" onAction="#anadirempresa" prefHeight="77.0" prefWidth="185.0" text="Añadir" textFill="#fcf8f8" />
-      <TableView layoutX="460.0" layoutY="85.0" prefHeight="453.0" prefWidth="825.0">
+      <TableView fx:id="Tabla" layoutX="460.0" layoutY="85.0" onSort="#initialize" prefHeight="453.0" prefWidth="825.0">
         <columns>
           <TableColumn fx:id="ColIdEmpresa" prefWidth="87.0" text="ID EMPRESA" />
           <TableColumn fx:id="ColNombre" prefWidth="111.0" text="NOMBRE" />

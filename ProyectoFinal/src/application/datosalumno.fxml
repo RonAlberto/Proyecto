@@ -37,7 +37,7 @@
       <Text layoutX="79.0" layoutY="539.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CP" />
       <TextField fx:id="myTextField6" layoutX="222.0" layoutY="515.0" onAction="#initialize" />
       <Button fx:id="Anadir" layoutX="611.0" layoutY="559.0" mnemonicParsing="false" onAction="#anadiralumno" prefHeight="77.0" prefWidth="185.0" text="Añadir" textFill="#fcf8f8" />
-      <TableView layoutX="490.0" layoutY="83.0" prefHeight="459.0" prefWidth="757.0">
+      <TableView fx:id="Tabla" layoutX="496.0" layoutY="83.0" onSort="#initialize" prefHeight="459.0" prefWidth="757.0">
         <columns>
           <TableColumn fx:id="ColDni" prefWidth="114.0" text="DNI" />
           <TableColumn fx:id="ColNombre" prefWidth="125.0" text="NOMBRE" />

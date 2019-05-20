@@ -10,27 +10,19 @@ import javafx.scene.control.TextField;
 public class vinculacion {
 	
 	
+	@FXML
+	private TextField nombrealumno;
 	
 	@FXML
-	ChoiceBox<String> NombreAlumno;
-	
-	ObservableList<String> NombreList = FXCollections.observableArrayList("");
+	private TextField apellidosalumno;
 	
 	@FXML
-	ChoiceBox<String> Apellidos;
-	
-	ObservableList<String> ApellidosList = FXCollections.observableArrayList("");
+	private TextField nombrempresa;
 	
 	@FXML
-	ChoiceBox<String> NombreEmpresa;
+	private TextField tutorempresa;
 	
-	ObservableList<String> NombreEmpresaList = FXCollections.observableArrayList("");
 	
-	@FXML
-	ChoiceBox<String> TutorEmpresa;
-	
-	ObservableList<String> TutorEmpresaList = FXCollections.observableArrayList("");
-
 	@FXML
 	private TextField horarioentradaMa;
 
@@ -51,8 +43,10 @@ public class vinculacion {
 
 	@FXML
 	private Button Borrar;
+	
 	@FXML
 	private Button Modificar;
+	
 	@FXML
 	private Button Vincular;
 
